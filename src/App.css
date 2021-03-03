@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+/* Параметры квартир в карточках */
+.layout_prop {
+   color:#03bab0;
+   padding-top: 10px;
+   font-size: 18px
+ }
+
+ /* Название карточки */
+ .cardTitle {
+  padding: 20px 10px 0;
+  height: 65px;
+ } 
+
+/* Контейнер с кнопкой "Узнать больше" в карточках */
+ .buttonLine {
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Кнопка "Узнать больше" в карточках */
+.myCardButton {
+  margin-left: auto;
+  margin-right: auto;
+  background:  linear-gradient(90deg, #add543 0, #03bab0) !important;
+  color: white !important;
+}
+
+/* Стили для параметров квартиры в карточках */
+.lonelyCard, .threeCards {
+  margin: 30px auto !important;
+  width: 300px;
+  max-width: 350px;
+  min-width: 250px;
+  padding-bottom: 20px;
+  min-height: 524px;
+}
+
+/* Когда три карточки с квартирами в ряду */
+.threeCards {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+/* Когда три карточки с квартирами в ряду */
+.chooseApartmentButtonLine {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.chooseApartmentButtonLine button:hover {
+  background-color: #03bab0;
+  color: white;
+}
+
+.apartmentDialog {
+  padding: 35px;
+}
+
+#customized-dialog-title {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.dialogWindow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textDialogContent {
+  width: 450px;
+}
+
+.apartmentDialogInfoTable {
+  width: 100%;
+}
+
+.apartmentDialogInfoTable tr td:nth-child(odd) {
+  text-align: left;
+}
+
+.apartmentDialogInfoTable tr td:nth-child(even) {
+  text-align: right;
+  color: #03bab0;
+  font-style: bold;
+  font-size: 20px
+}
+
+
+.textDialogContent div {
+  margin: 7px auto;
+  text-align: center;
+}
+
+.textDialogContent > .cardFormTitle {
+  font-size: 22px;
+  margin: 30px 0 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.dialogForm {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
