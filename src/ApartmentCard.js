@@ -47,7 +47,7 @@ export default function MyMediaCard(props) {
                 <CardActionArea onClick={props.onClick} className={classes.mediaContainer}>
                     <CardMedia
                         className={classes.media}
-                        image="/img/plans/et-2-5_kv-01.png"
+                        image={props.image}
                         title="Contemplative Reptile"
                     />
                 </CardActionArea>
