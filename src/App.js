@@ -8,6 +8,10 @@ import YandexMap from "./YandexMap";
 import IkeaPark from "./IkeaPark";
 import Gallery from "./Gallery";
 import Infastructure from "./Infrastructure";
+import OurBuildings from "./ourBuildings";
+import DocsSection from "./docsSection";
+import PaymentMethodsSection from "./paymentMethodsSection";
+
 
 export default function App() {
 
@@ -26,7 +30,9 @@ export default function App() {
         <YandexMap />
         <IkeaPark />
         <Gallery />
-       
+        <OurBuildings />
+        <DocsSection />
+        <PaymentMethodsSection />
       </div>
     </>
   );
