@@ -23,6 +23,7 @@ import Grow from "@material-ui/core/Grow";
 import Slide from "@material-ui/core/Slide";
 import Collapse from "@material-ui/core/Collapse";
 import Fade from "@material-ui/core/Fade";
+import FormOnly from "./justForm";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
@@ -174,10 +175,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PopularPlansSection() {
   const theme = useTheme();
-  
-  
+
+
   const [width, setWidth] = React.useState(document.body.clientWidth)
-  window.onresize = () => {setWidth(document.body.clientWidth)};
+  window.onresize = () => { setWidth(document.body.clientWidth) };
 
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = useStyles();
@@ -456,121 +457,128 @@ export default function PopularPlansSection() {
     }, 600);
   }
   return (
-    <div className="popularPlansSection" id="popularPlans">
-      <div className="PopularPlansSectionTitle">ПЛАНИРОВКИ КВАРТИР ЖК МЯТА</div>
-      <div className="PopularPlansSectionSubtitle">
-        Посмотрите самые популярные планировки квартир
+    <>
+      <div className="popularPlansSection" id="popularPlans">
+        <div className="PopularPlansSectionTitle">ПЛАНИРОВКИ КВАРТИР ЖК МЯТА</div>
+        <div className="PopularPlansSectionSubtitle">
+          Посмотрите самые популярные планировки квартир
       </div>
-      <div className="chooseApartmentButtonLine">
-        <Button
-          className={buttonClasses[0]}
-          size="large"
-          variant="outlined"
-          onClick={() => {
-            doTransitionShit();
-            setTimeout(() => updateFilteredArr(filterApartments(0)), 600);
-            changeButtonClasses(0);
-          }}
-        >
-          Студии
+        <div className="chooseApartmentButtonLine">
+          <Button
+            className={buttonClasses[0]}
+            size="large"
+            variant="outlined"
+            onClick={() => {
+              doTransitionShit();
+              setTimeout(() => updateFilteredArr(filterApartments(0)), 600);
+              changeButtonClasses(0);
+            }}
+          >
+            Студии
         </Button>
-        <Button
-          className={buttonClasses[1]}
-          size="large"
-          variant="outlined"
-          onClick={() => {
-            doTransitionShit();
-            setTimeout(() => updateFilteredArr(filterApartments(1)), 600);
-            changeButtonClasses(1);
-          }}
-        >
-          1-комнатные
+          <Button
+            className={buttonClasses[1]}
+            size="large"
+            variant="outlined"
+            onClick={() => {
+              doTransitionShit();
+              setTimeout(() => updateFilteredArr(filterApartments(1)), 600);
+              changeButtonClasses(1);
+            }}
+          >
+            1-комнатные
         </Button>
-        <Button
-          className={buttonClasses[2]}
-          size="large"
-          variant="outlined"
-          onClick={() => {
-            doTransitionShit();
-            setTimeout(() => updateFilteredArr(filterApartments(2)), 600);
-            changeButtonClasses(2);
-          }}
-        >
-          2-комнатные
+          <Button
+            className={buttonClasses[2]}
+            size="large"
+            variant="outlined"
+            onClick={() => {
+              doTransitionShit();
+              setTimeout(() => updateFilteredArr(filterApartments(2)), 600);
+              changeButtonClasses(2);
+            }}
+          >
+            2-комнатные
         </Button>
-        <Button
-          className={buttonClasses[3]}
-          size="large"
-          variant="outlined"
-          onClick={() => {
-            doTransitionShit();
-            setTimeout(() => updateFilteredArr(filterApartments(3)), 600);
-            changeButtonClasses(3);
-          }}
-        >
-          3-комнатные
+          <Button
+            className={buttonClasses[3]}
+            size="large"
+            variant="outlined"
+            onClick={() => {
+              doTransitionShit();
+              setTimeout(() => updateFilteredArr(filterApartments(3)), 600);
+              changeButtonClasses(3);
+            }}
+          >
+            3-комнатные
         </Button>
-        <Button
-          className={buttonClasses[4]}
-          size="large"
-          variant="outlined"
-          onClick={() => {
-            doTransitionShit();
-            setTimeout(() => updateFilteredArr(filterApartments("all")), 600);
-            changeButtonClasses(4);
-          }}
-        >
-          Все
+          <Button
+            className={buttonClasses[4]}
+            size="large"
+            variant="outlined"
+            onClick={() => {
+              doTransitionShit();
+              setTimeout(() => updateFilteredArr(filterApartments("all")), 600);
+              changeButtonClasses(4);
+            }}
+          >
+            Все
         </Button>
-      </div>
+        </div>
 
-      <Collapse timeout={600} in={transition}>
-        <Carousel
-          autoPlay={false}
-          animation="slide"
-          timeout={350}
-          navButtonsAlwaysVisible={true}
-        >
-          {apartmentCards}
-        </Carousel>
-      </Collapse>
-      <MyResponsiveDialog
-        open={dialog}
-        onClose={() => {
-          updateDialog(false);
-        }}
-        updateUserDataFunc={(phone, name) => {
-          setName(name);
-          setPhone(phone);
-        }}
-        updateSnackbarFunc={(open, message, severity) => {
-          updateSnackbarMessage(message);
-          updateSnackbarOpen(open);
-          updateSnackbarSeverity(severity);
-        }}
-        updateBackdropFunc={(isOpen) => updateBackdrop(isOpen)}
-        content={dialogContent}
-        title={dialogTitle}
-        phone={phone}
-        name={name}
-        area={currentArea}
+        <Collapse timeout={600} in={transition}>
+          <Carousel
+            autoPlay={false}
+            animation="slide"
+            timeout={350}
+            navButtonsAlwaysVisible={true}
+          >
+            {apartmentCards}
+          </Carousel>
+        </Collapse>
+        <MyResponsiveDialog
+          open={dialog}
+          onClose={() => {
+            updateDialog(false);
+          }}
+          updateUserDataFunc={(phone, name) => {
+            setName(name);
+            setPhone(phone);
+          }}
+          updateSnackbarFunc={(open, message, severity) => {
+            updateSnackbarMessage(message);
+            updateSnackbarOpen(open);
+            updateSnackbarSeverity(severity);
+          }}
+          updateBackdropFunc={(isOpen) => updateBackdrop(isOpen)}
+          content={dialogContent}
+          title={dialogTitle}
+          phone={phone}
+          name={name}
+          area={currentArea}
         //classes={classes.ApartmentDialog}
-      />
-      <Snackbar
-        open={snackbarOpen}
-        autoHideDuration={10000}
-        onClose={() => updateSnackbarOpen(false)}
-      >
-        <Alert
+        />
+        <Snackbar
+          open={snackbarOpen}
+          autoHideDuration={10000}
           onClose={() => updateSnackbarOpen(false)}
-          severity={snackbarSeverity}
         >
-          {snackbarMessage}
-        </Alert>
-      </Snackbar>
-      <Backdrop className={classes.backdrop} open={backdrop} onClick={() => {}}>
-        <CircularProgress color="inherit" />
-      </Backdrop>
-    </div>
+          <Alert
+            onClose={() => updateSnackbarOpen(false)}
+            severity={snackbarSeverity}
+          >
+            {snackbarMessage}
+          </Alert>
+        </Snackbar>
+        <Backdrop className={classes.backdrop} open={backdrop} onClick={() => { }}>
+          <CircularProgress color="inherit" />
+        </Backdrop>
+      </div>
+      <FormOnly
+        class="HorizontalCallBackForm"
+        title="ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК"
+        subtitle="Перезвоним в течение 5 минут!"
+      />
+    </>
   );
 }
