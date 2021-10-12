@@ -1,35 +1,33 @@
 import React, { useEffect } from "react";
-import PopularPlansSection from "./PopularPlansSection";
-import TopNavigation from "./TopNavigationSection";
-import GeneralPlan from "./GeneralPlan";
-
-import TopCarouselBanner from "./TopCarouselBanner";
-import YandexMap from "./YandexMap";
-import IkeaPark from "./IkeaPark";
-import Gallery from "./Gallery";
-import Infastructure from "./Infrastructure";
-import OurBuildings from "./ourBuildings";
-import DocsSection from "./docsSection";
-import PaymentMethodsSection from "./paymentMethodsSection";
-
+import PopularPlansSection from "./sections/PopularPlansSection";
+import TopNavigation from "./components/TopMenu";
+import GeneralPlan from "./sections/GeneralPlan";
+import TopCarouselBanner from "./sections/TopCarouselBanner";
+import YandexMap from "./sections/YandexMap";
+import IkeaPark from "./sections/IkeaPark";
+import Gallery from "./sections/Gallery";
+import MyataInfrastructure from "./sections/Infrastructure"
+import OurBuildings from "./sections/OurBuildingsSection";
+import DocsSection from "./sections/DocsSection";
+import PaymentMethodsSection from "./sections/PaymentMethodsSection";
+import Footer from "./sections/Footer";
 
 export default function App() {
 
   return (
     <>
       <TopNavigation />
-      <div class="bodyContent">
         <TopCarouselBanner />
         <GeneralPlan />
         <PopularPlansSection />
         <YandexMap />
         <IkeaPark />
         <Gallery />
-        <OurBuildings />
+        <MyataInfrastructure />
         <DocsSection />
+        <OurBuildings />
         <PaymentMethodsSection />
-      </div>
+        <Footer />
     </>
   );
-  //return <PopularPlansSection/>
 }

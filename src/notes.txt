@@ -1,0 +1,47 @@
+
+.GeneralPlanSection {
+  position: relative;
+}
+
+/* Секция с генеральным планом */
+.GeneralPlanBackground img  {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top;
+}
+
+/* Заголовок генерального плана */
+.GeneralPlanTitle {
+  padding-top: 80px;
+  font-family: MyriadPro;
+  letter-spacing: 7px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Комментарий под заголовком генерального плана*/
+.GeneralPlanSubtitle {
+  font-family: MyriadPro;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 60px;
+}
+
+/* Секция с планировками этажей */
+.floorImageSection {
+  background-color: white;
+}
+
+/* Заголовок генерального плана  < 680*/
+.GeneralPlanTitle {
+  font-size: 26px;
+}
+/* Комментарий под заголовком генерального плана < 680 */
+.GeneralPlanSubtitle {
+  font-size: 15px;
+}
