@@ -223,6 +223,14 @@ const allDocsArr = [
     title: "Разрешение на ввод объекта в эксплуатацию от 20.09.2021 - Литер 2",
     url: "react-project/pdf/РНВ_корпус_2_Мята.pdf",
   },
+  {
+    title: "Разрешение на ввод объекта в эксплуатацию от 20.12.2021 - Литер 3",
+    url: "react-project/pdf/razresh_na_vvod_l_3.pdf",
+  },
+  {
+    title: "Разрешение на ввод объекта в эксплуатацию от 20.012.2021 - Литер 4",
+    url: "react-project/pdf/razresh_na_vvod_l_4.pdf",
+  },
 ];
 
 export default function DocsSection(props: any) {

@@ -11,6 +11,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import ApartmentDialog from "../components/apartmentDialog";
 
+
 const apartments = [
   {
     title: "КВАРТИРА-СТУДИЯ",
