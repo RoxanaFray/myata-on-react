@@ -119,7 +119,7 @@ export default function Footer() {
             alignItems="center"
           >
             <Grid item className={classes.phoneNumber}>
-            <Typography variant="h5" align="center">8 (861) 298-26-83</Typography>
+            <Typography variant="h5" align="center" className="phone_number">+7 (928) 272-40-44</Typography>
             </Grid>
             <Grid item className={classes.social}>
               <a
@@ -130,13 +130,13 @@ export default function Footer() {
                 ВКонтакте
               </a>
 
-              <a
+              {/* <a
                 className={classes.socialIcon}
                 href="https://www.instagram.com/myata.krd/?igshid=v6uh5v6mxjn2"
                 target="_blank"
               >
                 Instagram
-              </a>
+              </a> */}
             </Grid>
             </Grid>
             </Grid>

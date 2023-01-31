@@ -136,7 +136,7 @@ const objectsArr = [
     title: "ЖК Мята",
     text: ``,
     image: "react-project/images/myata.jpg",
-    status: "строится",
+    status: "построен",
   },
   {
     title: "ЖК Баланс",

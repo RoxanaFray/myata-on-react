@@ -173,7 +173,7 @@ export default function TopNavigation() {
               </Grid>
 
               <Grid item xs={2} >
-                <a href="tel:8 (861) 298-21-33" className={classes.companyPhoneNumber}>8 (861) 298-21-33</a>
+                <a href="tel:+7 (928) 272-40-44" className={`${classes.companyPhoneNumber} phone_number`}>+7 (928) 272-40-44</a>
               </Grid>
             </Grid>
           </Toolbar>
@@ -214,7 +214,7 @@ export default function TopNavigation() {
               <SwipeableTemporaryDrawer />
             </Grid>
             <Grid item className={classes.companyPhoneNumber}>
-              <a href="tel:8 (861) 298-21-33">8 (861) 298-21-33</a>
+              <a href="tel:+7 (928) 272-40-44" className="phone_number">+7 (928) 272-40-44</a>
             </Grid>
           </Grid>
         </Container>

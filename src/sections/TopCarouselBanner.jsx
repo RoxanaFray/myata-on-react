@@ -10,17 +10,17 @@ import Container from "@material-ui/core/Container";
 const slides = [
   {
     title: "ЖИЛОЙ КОМПЛЕКС",
-    subtitle: "В ЭКОЛОГИЧЕСКИ ЧИСТОМ РАЙОНЕ",
+    subtitle: "ВСЕ ДОМА ВВЕДЕНЫ В ЭКСПЛУАТАЦИЮ!",
     image: "react-project/images/cam_09_fx_dark.jpg",
   },
   {
-    title: "ВСЕ НЕОБХОДИМОЕ",
-    subtitle: "В ШАГОВОЙ ДОСТУПНОСТИ",
+    title: "ОДНОКОМНАТНЫЕ КВАРТИРЫ",
+    subtitle: "ОТ 2 780 500 РУБЛЕЙ",
     image: "react-project/images/cam_10_fx_dark.jpg",
   },
   {
-    title: "ЖИЛЬЁ КОМФОРТ-КЛАССА",
-    subtitle: "СТРОИМ ПО 214 ФЗ",
+    title: "Ипотека от 3%",
+    subtitle: " ",
     image: "react-project/images/cam_05_fx_dark.jpg",
   },
 ];
