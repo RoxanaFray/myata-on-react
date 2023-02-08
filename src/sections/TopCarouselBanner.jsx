@@ -7,21 +7,36 @@ import { useTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
+
 const slides = [
   {
     title: "ЖИЛОЙ КОМПЛЕКС",
     subtitle: "ВСЕ ДОМА ВВЕДЕНЫ В ЭКСПЛУАТАЦИЮ!",
     image: "react-project/images/cam_09_fx_dark.jpg",
+    form: true,
+    link: ''
   },
   {
-    title: "ОДНОКОМНАТНЫЕ КВАРТИРЫ",
-    subtitle: "ОТ 2 780 500 РУБЛЕЙ",
+    title: "Принимаем к оплате жилищные сертификаты любого региона",
+    subtitle: "Проводим с вами все этапы сделки.",
     image: "react-project/images/cam_10_fx_dark.jpg",
+    form: true,
+    link: ''
   },
   {
-    title: "Ипотека от 3%",
-    subtitle: " ",
-    image: "react-project/images/cam_05_fx_dark.jpg",
+    title: "Квартиры в ЖК Баланс",
+    subtitle: "Все дома сданы. Принимаем к оплате жилищные сертификаты.",
+    image: "react-project/images/balance.jpg",
+    form: false,
+    link: 'http://xn--80aabtuip6a.xn--p1ai/'
+  },
+  {
+    title: "Квартиры в Виноградъ 2",
+    subtitle: "Все дома сданы. Принимаем к оплате жилищные сертификаты.",
+    image: "react-project/images/vinograd21.jpeg",
+    form: false,
+    link: 'https://xn----8sbfeghqn4akx6j.xn--p1ai/'
   },
 ];
 
@@ -108,6 +123,24 @@ export default function TopCarouselBanner() {
         background: "linear-gradient(90deg, #03bab0 0, #add543 )",
       },
     },
+    linkButton: {
+      color: 'white',
+      borderColor: "white",
+      fontFamily: 'MyriadPro',
+      marginTop: 50,
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      fontWeight: 'bold',
+      padding: '10px 30px',
+      [theme.breakpoints.down("sm")]: {
+        marginBottom: theme.spacing(1),
+        marginTop: 0,
+        padding: '10px 10px',
+      },
+      "&:hover": {
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+      },
+    },
   }));
   const classes = useStyles();
 
@@ -157,6 +190,7 @@ export default function TopCarouselBanner() {
                 </Container>
               </Grid>
               <Grid item>
+                { elem.form ?
                 <FormOnly
                   rootClassName={classes.form}
                   titleClassName={classes.formTitle}
@@ -166,7 +200,13 @@ export default function TopCarouselBanner() {
                   buttonClassName={classes.formButton}
                   title="ЗАПИШИТЕСЬ НА ПРОСМОТР"
                   subtitle="своей будущей квартиры"
-                />
+                /> :
+                <Button
+                  size="large"
+                  variant="outlined"
+                  className={classes.linkButton}
+                  onClick={() => window.open(elem.link)}
+                  >Перейти на страницу жилого комплекса</Button>}
               </Grid>
               <div className={classes.sliderDown}>
                 <a href="#genplan">
