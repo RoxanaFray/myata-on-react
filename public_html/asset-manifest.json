@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95e921c3.chunk.css",
+    "main.js": "/static/js/main.efdb16fd.chunk.js",
+    "main.js.map": "/static/js/main.efdb16fd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1bc513fd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1bc513fd.js.map",
+    "static/js/2.38c7e3af.chunk.js": "/static/js/2.38c7e3af.chunk.js",
+    "static/js/2.38c7e3af.chunk.js.map": "/static/js/2.38c7e3af.chunk.js.map",
+    "static/js/3.60b3f68e.chunk.js": "/static/js/3.60b3f68e.chunk.js",
+    "static/js/3.60b3f68e.chunk.js.map": "/static/js/3.60b3f68e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.95e921c3.chunk.css.map": "/static/css/main.95e921c3.chunk.css.map",
+    "static/js/2.38c7e3af.chunk.js.LICENSE.txt": "/static/js/2.38c7e3af.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/MyriadPro-Semibold.b894b805.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1bc513fd.js",
+    "static/js/2.38c7e3af.chunk.js",
+    "static/css/main.95e921c3.chunk.css",
+    "static/js/main.efdb16fd.chunk.js"
+  ]
+}
