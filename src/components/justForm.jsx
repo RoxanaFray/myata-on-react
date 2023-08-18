@@ -182,7 +182,6 @@ export default function FormOnly(props) {
               let data = {
                 phone: phone,
                 name: name,
-                title: "Форма обратной связи. Сайт жкмята.рф",
               };
 
               if (props.selectedApartment) {
@@ -191,7 +190,7 @@ export default function FormOnly(props) {
                 data.liter = props.selectedApartment.liter;
               }
 
-              fetch("/submit/submit-for-react.php", {
+              fetch("https://icipih3rjertgwnh7wgsyz2lby0azutc.lambda-url.ap-northeast-1.on.aws/", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {

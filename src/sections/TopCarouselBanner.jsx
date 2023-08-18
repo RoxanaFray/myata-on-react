@@ -18,6 +18,13 @@ const slides = [
     link: ''
   },
   {
+    title: "В продаже кладовые помещения",
+    subtitle: "25.000₽ за квадратный метр",
+    image: "react-project/images/cam_05_fx_dark.jpg",
+    form: true,
+    link: ''
+  },
+  {
     title: "Принимаем к оплате жилищные сертификаты любого региона",
     subtitle: "Проводим с вами все этапы сделки.",
     image: "react-project/images/cam_10_fx_dark.jpg",
